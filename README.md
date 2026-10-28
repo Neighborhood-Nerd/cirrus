@@ -15,6 +15,8 @@
   <a href="https://github.com/Neighborhood-Nerd/cirrus/issues">Issues</a>
   ·
   <a href="https://github.com/Neighborhood-Nerd/soundloom-providers">Providers</a>
+  ·
+  <a href="https://discord.gg/ehTSarrwf">Discord</a>
 </p>
 
 ---
@@ -75,6 +77,7 @@ This repository is the public home for **Issues** and **Releases**.
 
 - Report bugs or request features: [Open an issue](https://github.com/Neighborhood-Nerd/cirrus/issues/new)
 - Browse existing reports: [All issues](https://github.com/Neighborhood-Nerd/cirrus/issues)
+- Chat with the community: [Discord](https://discord.gg/ehTSarrwf)
 
 ## Related
 
