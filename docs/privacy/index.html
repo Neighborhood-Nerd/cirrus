@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>Privacy Policy · Cirrus</title>
+<meta name="description" content="What Cirrus keeps on your device, what a Cirrus account stores, and how captions, bug reports, and connected services work.">
+<link rel="icon" href="../assets/cirrus-logo.png">
+<link rel="apple-touch-icon" href="../assets/cirrus-logo.png">
+<link rel="stylesheet" href="../assets/policy.css?v=2">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <nav class="top-links" aria-label="Policies and contact">
+    <a href="../privacy/" aria-current="page">Privacy Policy</a>
+    <a href="../terms/">Terms of Use</a>
+    <a href="../support/">Support</a>
+    <a href="../contact/">Contact</a>
+  </nav>
+  <a class="brand" href="../"><img src="../assets/cirrus-logo.png" alt="" width="34" height="34">Cirrus - Audiobook Player</a>
+
+  <main id="main">
+  <h1>Privacy Policy</h1>
+  <p class="lede">Cirrus is a player for audiobooks you already have a way to listen to. Here is what that means for your data.</p>
+  <p class="date">Effective November 4, 2026</p>
+
+  <div class="card summary">
+    <p class="eyebrow">In short</p>
+    <p>Cirrus does not show ads and does not use advertising or analytics SDKs. Playback, captions, downloads, and the files you import stay on the device you are holding, except when you choose to send something.</p>
+    <p>Two things do reach us if you use them:</p>
+    <ul class="list">
+      <li><strong>A Cirrus account</strong>, if you create one. It is how library shelves, listening history, clips, source matches, and app settings follow you to other devices. Accounts are run by Supabase.</li>
+      <li><strong>A bug report</strong>, if you send one from Settings. That files a GitHub issue with the text you write, optional screenshots, and recent session logs.</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <p class="eyebrow">Contents</p>
+    <ol>
+      <li><a href="#on-your-device">What stays on your device</a></li>
+      <li><a href="#account">Your Cirrus account</a></li>
+      <li><a href="#what-we-store">What we store with your account</a></li>
+      <li><a href="#captions">Captions</a></li>
+      <li><a href="#audiobookdb">AudiobookDB</a></li>
+      <li><a href="#downloaders">Downloaders and providers</a></li>
+      <li><a href="#other-services">Services we do not run</a></li>
+      <li><a href="#bug-reports">Bug reports</a></li>
+      <li><a href="#photos-files">Photos and files</a></li>
+      <li><a href="#carplay">CarPlay</a></li>
+      <li><a href="#what-we-collect">What we collect</a></li>
+      <li><a href="#ads">Ads and analytics</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="on-your-device">
+    <p class="num">01</p>
+    <h2>What stays on your device</h2>
+    <p>Cirrus keeps a local copy of what you need to listen:</p>
+    <ul class="list">
+      <li>downloaded or imported audio, and a cache of catalogue and shelves after the first sync</li>
+      <li>playback position, clips, notes, and the listen log</li>
+      <li>caption models you download, and captions generated on this device</li>
+      <li>keys and sign-ins you add, kept in the device’s secure storage</li>
+      <li>session logs used if you later choose to report a bug</li>
+    </ul>
+    <p>Without an account, none of that is sent to Neighborhood Nerd, except a bug report you choose to send. With an account, a copy of library state and settings is stored with the account so your other devices can use it.</p>
+  </section>
+
+  <section id="account">
+    <p class="num">02</p>
+    <h2>Your Cirrus account</h2>
+    <p>A Cirrus account is optional for local listening. You need one to sync across devices, to use provider sources, and to file a bug report from the app.</p>
+    <p><strong>Signing in.</strong> You create an account with an email address and a password, or sign in with that email. We send a confirmation or password-reset message to the address you give us. Sign-in is run by Supabase. Your session is kept on the device.</p>
+    <p><strong>Signing out.</strong> In Cirrus, open <span class="path">Profile</span> and tap <span class="path">Sign out</span>. That signs this device out and clears the local library copy on it. Your account and the copy in the cloud stay until you ask us to delete them.</p>
+  </section>
+
+  <section id="what-we-store">
+    <p class="num">03</p>
+    <h2>What we store with your account</h2>
+    <p>If you make an account, Supabase stores:</p>
+    <ul class="list">
+      <li>your account id, email address, and when you signed in</li>
+      <li>your shelves (including Continue Listening, To Listen, Listened, and Favorites)</li>
+      <li>listening history: title, cover, position, and when it was last updated</li>
+      <li>clips and notes you save on a title</li>
+      <li>which source you pinned for a book</li>
+      <li>app settings so they follow you: AudiobookDB key and username, provider repo URLs, installed sources, source settings, and downloader configuration (including API keys you entered, so those downloaders work on your other devices)</li>
+      <li>a record that you submitted a bug report (used to limit how many you can send in a day)</li>
+    </ul>
+    <p>Each of those rows is limited to your account id. Other Cirrus accounts cannot read them. This is not a locked file that only your devices can open. Neighborhood Nerd can see account data when operating the service, for example to fix a bug you reported or to delete an account you asked us to remove.</p>
+    <p>Audio files themselves are not uploaded to your Cirrus account.</p>
+  </section>
+
+  <section id="captions">
+    <p class="num">04</p>
+    <h2>Captions</h2>
+    <p>Closed captions are made on the device, from audio you have already downloaded. Nothing is sent to us for speech recognition.</p>
+    <ul class="list">
+      <li><strong>On Apple devices that support it:</strong> Cirrus uses Apple’s on-device speech recognition. No extra model download is needed.</li>
+      <li><strong>Otherwise:</strong> Cirrus uses a Whisper speech model that you download onto the phone. The pack stays on the device. You pick the size in <span class="path">Settings → Captions</span>.</li>
+    </ul>
+    <p>Streaming-only playback is not captioned yet. You need a downloaded title.</p>
+  </section>
+
+  <section id="audiobookdb">
+    <p class="num">05</p>
+    <h2>AudiobookDB</h2>
+    <p>Catalogue browsing and listening shelves come from <a href="https://audiobookdb.org">AudiobookDB</a>, a community audiobook metadata catalog. You paste an API key during onboarding. That key is saved on the device and, if you have an account, copied into your account settings so it syncs.</p>
+    <p>When you browse, search, or refresh shelves, your device talks to AudiobookDB directly. It receives the lookups the catalogue needs (for example a search, a book id, or a shelf refresh). It never receives your Cirrus password. AudiobookDB’s own privacy policy covers what that service keeps.</p>
+  </section>
+
+  <section id="downloaders">
+    <p class="num">06</p>
+    <h2>Downloaders and providers</h2>
+    <p>Playback and downloads can use installable sources and optional cloud downloaders. Cirrus does not download peer-to-peer on its own.</p>
+    <ul class="list">
+      <li><strong>Downloaders</strong> (TorBox, Real-Debrid, Premiumize): you add an API key or complete that service’s own sign-in. The key is kept in secure storage on the device and included in account sync so your other devices can use it. Audio is fetched from that service to your device. We are not in between.</li>
+      <li><strong>Search providers:</strong> you can install provider repos (for example from a public index). Those scripts run on your device and talk to the sites they are written for. Repo URLs and source settings sync with your account.</li>
+    </ul>
+    <p>What each downloader, provider, or site receives is covered by its own terms. Removing a downloader or provider in Settings removes it from Cirrus on that device and from the next settings sync.</p>
+  </section>
+
+  <section id="other-services">
+    <p class="num">07</p>
+    <h2>Services we do not run</h2>
+    <p>Cirrus is a player. It does not sell, host, or supply audiobooks. Covers and book details in the catalogue come from AudiobookDB and the public sources it uses. Free or remote audio you play comes from the library, downloader, or file you chose.</p>
+    <p>GitHub hosts Cirrus releases and issues. Discord is a community chat we link to. Buy Me a Coffee is an optional way to support development. Each of those is run by someone else.</p>
+  </section>
+
+  <section id="bug-reports">
+    <p class="num">08</p>
+    <h2>Bug reports</h2>
+    <p>From <span class="path">Settings → Report a bug</span>, a signed-in account can file an issue on the public Cirrus GitHub repository. We receive:</p>
+    <ul class="list">
+      <li>the title and description you type</li>
+      <li>up to two screenshots, if you attach them</li>
+      <li>a zip of the last three session log files</li>
+      <li>optionally your GitHub username, if you ask to be mentioned so GitHub can notify you</li>
+    </ul>
+    <p>Session logs do not include raw AudiobookDB keys or downloader secrets. They may still include account metadata useful for debugging, such as an email, user ids, or listening history ids. The report is sent through a Supabase function, which can password-protect the log zip before it is attached. GitHub issues are public, so do not put secrets in the title or description.</p>
+  </section>
+
+  <section id="photos-files">
+    <p class="num">09</p>
+    <h2>Photos and files</h2>
+    <p>Cirrus opens files you pick, to import audiobooks or to attach screenshots to a bug report. On Apple devices, the photo-library permission is for those two jobs. Cirrus does not record with the microphone. Playback may still cause the system to ask for microphone access; that is the audio session, not a recording feature.</p>
+  </section>
+
+  <section id="carplay">
+    <p class="num">10</p>
+    <h2>CarPlay</h2>
+    <p>On iPhone, Cirrus can show your library and Now Playing on CarPlay. That uses the same library already on the phone. Nothing extra is sent to us because you used CarPlay.</p>
+  </section>
+
+  <section id="what-we-collect">
+    <p class="num">11</p>
+    <h2>What we collect</h2>
+    <ul class="list">
+      <li>Your account’s data, only if you make a Cirrus account, as described above.</li>
+      <li>Bug reports you send from the app, as described above.</li>
+      <li>Messages you send us on GitHub or Discord.</li>
+    </ul>
+  </section>
+
+  <section id="ads">
+    <p class="num">12</p>
+    <h2>Ads and analytics</h2>
+    <p>Cirrus does not include advertising SDKs, analytics SDKs, or tracking pixels. It does not use an advertising identifier.</p>
+    <p>If you have chosen to share analytics with app developers on an Apple device, Apple may send us anonymous crash reports. You can turn that off in the system Settings under Analytics &amp; Improvements.</p>
+    <p>AudiobookDB has its own popular and trending catalogue lists. Those are their charts, not a tracker we placed in Cirrus.</p>
+  </section>
+
+  <section id="children">
+    <p class="num">13</p>
+    <h2>Children</h2>
+    <p>Cirrus is not directed at children under 13. If you believe a child under 13 has made an account, contact us and we will delete it.</p>
+  </section>
+
+  <section id="choices">
+    <p class="num">14</p>
+    <h2>Your choices</h2>
+    <ul class="list">
+      <li><strong>Sign out on one device:</strong> <span class="path">Profile → Sign out</span>. The local library on that device is cleared.</li>
+      <li><strong>Clear your AudiobookDB key:</strong> <span class="path">Settings → Clear API key</span>.</li>
+      <li><strong>Remove a downloader or provider:</strong> <span class="path">Settings → Downloaders</span> or <span class="path">Settings → Search providers</span>.</li>
+      <li><strong>Turn captions off, or delete a Whisper model:</strong> <span class="path">Settings → Captions</span>.</li>
+      <li><strong>Delete your Cirrus account and the copy stored with it:</strong> ask us from the <a href="../contact/">Contact</a> page. There is not yet a delete-account button in the app.</li>
+    </ul>
+    <p>Depending on where you live, you may have the right to see, correct, export, or delete personal information a company holds about you. Ask us for a copy, a correction, or a deletion of account data.</p>
+  </section>
+
+  <section id="security">
+    <p class="num">15</p>
+    <h2>Security</h2>
+    <p>Keys and sign-ins on the device are kept in the platform’s secure storage. Account data travels over encrypted connections to Supabase. Rows in the database are limited to your account by access rules. Keep your email password to yourself, and treat downloader keys like passwords.</p>
+  </section>
+
+  <section id="changes">
+    <p class="num">16</p>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the date at the top will change with it. If Cirrus ever needs to collect something new, this policy will say so first.</p>
+  </section>
+
+  <section id="contact">
+    <p class="num">17</p>
+    <h2>Contact</h2>
+    <p>Cirrus is made by Neighborhood Nerd (“we”, “us”), which is responsible for this policy. Questions about privacy? Open a GitHub issue, write in Discord, or use the <a href="../contact/">Contact</a> page. Common how-to answers are on <a href="../support/">Support</a>.</p>
+  </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Neighborhood Nerd</span>
+    <a href="../support/">Support</a>
+    <a href="../terms/">Terms of Use</a>
+    <a href="../contact/">Contact</a>
+  </footer>
+</div>
+</body>
+</html>

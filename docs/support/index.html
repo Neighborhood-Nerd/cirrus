@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <title>Support · Cirrus</title>
+  <meta name="description"
+    content="How to install Cirrus, sign in, add AudiobookDB, connect downloaders, use captions, and report a bug.">
+  <link rel="icon" href="../assets/cirrus-logo.png">
+  <link rel="apple-touch-icon" href="../assets/cirrus-logo.png">
+  <link rel="stylesheet" href="../assets/policy.css?v=2">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <nav class="top-links" aria-label="Policies and contact">
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../terms/">Terms of Use</a>
+      <a href="../support/" aria-current="page">Support</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+    <a class="brand" href="../"><img src="../assets/cirrus-logo.png" alt="" width="34" height="34">Cirrus - Audiobook Player</a>
+
+    <main id="main">
+      <h1>Support</h1>
+      <p class="date">Updated November 4, 2026</p>
+
+      <div class="card summary">
+        <p class="eyebrow">Need a person?</p>
+        <p>Chat in <a href="https://discord.gg/W3NWh3X8bX">Discord</a>, open a <a
+            href="https://github.com/Neighborhood-Nerd/cirrus/issues/new">GitHub issue</a>, or use <span
+            class="path">Settings → Report a bug</span> in the app (that path needs a Cirrus account and attaches logs).
+          All of those are listed on <a href="../contact/">Contact</a>.</p>
+      </div>
+
+      <nav class="toc" aria-label="Contents">
+        <p class="eyebrow">Contents</p>
+        <ol>
+          <li><a href="#get">How do I get Cirrus?</a></li>
+          <li><a href="#platforms">What does it run on?</a></li>
+          <li><a href="#account">What is a Cirrus account?</a></li>
+          <li><a href="#adb">How do I add AudiobookDB?</a></li>
+          <li><a href="#downloaders">How do downloaders work?</a></li>
+          <li><a href="#providers">What are search providers?</a></li>
+          <li><a href="#captions">How do captions work?</a></li>
+          <li><a href="#carplay">Does it work in the car?</a></li>
+          <li><a href="#updates">How do I update, or join beta?</a></li>
+          <li><a href="#bug">How do I report a bug?</a></li>
+          <li><a href="#sign-out">How do I sign out?</a></li>
+          <li><a href="#delete">How do I delete my account?</a></li>
+          <li><a href="#privacy">Is my listening private?</a></li>
+          <li><a href="#sell">Does Cirrus sell audiobooks?</a></li>
+        </ol>
+      </nav>
+
+      <section id="get">
+        <p class="num">01</p>
+        <h2>How do I get Cirrus?</h2>
+        <p>Download the latest build from <a href="https://github.com/Neighborhood-Nerd/cirrus/releases">GitHub
+            Releases</a>. Pick the file for your platform, install it, then open Cirrus.</p>
+      </section>
+
+      <section id="platforms">
+        <p class="num">02</p>
+        <h2>What does it run on?</h2>
+        <p>Cirrus is a cross-platform Flutter app. Current builds cover iPhone, iPad, Mac, Android, Windows, and Linux.
+          CarPlay and Android Auto are also supported.</p>
+      </section>
+
+      <section id="account">
+        <p class="num">03</p>
+        <h2>What is a Cirrus account?</h2>
+        <p>An email-and-password account, run by Supabase. With it:</p>
+        <ul class="list">
+          <li>library shelves, listening history, clips, and settings follow you between devices;</li>
+          <li>provider sources and in-app bug reports are available;</li>
+          <li>your AudiobookDB key and downloader keys can travel with the account, so you don’t re-enter them
+            everywhere.</li>
+        </ul>
+        <p>Create one from the sign-in screen, or later from <span class="path">Profile</span>. Check your email for the
+          confirmation message. A build without Supabase secrets can still play local files, but it won’t offer cloud
+          sign-in.</p>
+      </section>
+
+      <section id="adb">
+        <p class="num">04</p>
+        <h2>How do I add AudiobookDB?</h2>
+        <p>Catalogue and shelves come from <a href="https://audiobookdb.org">audiobookdb.org</a>. Get an API key there
+          (keys usually start with <span class="path">adb_</span>), then paste it in Cirrus onboarding, or later under
+          <span class="path">Settings → Change API key</span>.
+        </p>
+        <p>If you have a Cirrus account, that key is saved with the account so it syncs. <span class="path">Settings →
+            Refresh shelves</span> pulls Continue Listening, To Listen, Listened, and Favorites again. <span
+            class="path">Clear API key</span> removes it from this device.</p>
+      </section>
+
+      <section id="downloaders">
+        <p class="num">05</p>
+        <h2>How do downloaders work?</h2>
+        <p>Cirrus does not download peer-to-peer on its own. For sources that need a cloud unlocker, open <span
+            class="path">Settings → Downloaders</span> and add TorBox, Real-Debrid, or Premiumize. Some of those can
+          sign in with a device code in the browser; others take an API key.</p>
+        <p>Until a downloader is configured, those remote sources can’t fetch audio. Your key stays on the device and,
+          with an account, in settings sync.</p>
+      </section>
+
+      <section id="providers">
+        <p class="num">06</p>
+        <h2>What are search providers?</h2>
+        <p>Installable sources, from a provider repo you add. In <span class="path">Settings → Search providers</span>,
+          add a repo URL. The example community index lives at <a
+            href="https://github.com/Neighborhood-Nerd/soundloom-providers">soundloom-providers</a> (<span
+            class="path">index.json</span>).</p>
+        <p>Removing a repo uninstalls the sources that came from it. You are responsible for the repos you install; see
+          the <a href="../terms/">Terms of Use</a>.</p>
+      </section>
+
+      <section id="captions">
+        <p class="num">07</p>
+        <h2>How do captions work?</h2>
+        <p>Turn captions on from Now Playing (CC). They are made on this device, from a downloaded title. Streaming-only
+          playback is not captioned yet.</p>
+        <p>On Apple devices that support it, Cirrus uses Apple Speech and does not need a download. Otherwise it uses
+          Whisper: pick a model your phone can hold in RAM under <span class="path">Settings → Captions</span>. A pack
+          that is too large can crash the app. Tiny is the safer first download. Audio never leaves the device for this.
+        </p>
+      </section>
+
+      <section id="carplay">
+        <p class="num">08</p>
+        <h2>Does it work in the car?</h2>
+        <p>Yes, as a CarPlay audio app on iPhone: browse the library and control Now Playing from the dashboard. Use a
+          physical iPhone for in-car testing. Casting is also in the player for other speakers.</p>
+      </section>
+
+      <section id="updates">
+        <p class="num">09</p>
+        <h2>How do I update, or join beta?</h2>
+        <p>In <span class="path">Settings → Check for updates</span>, Cirrus looks at GitHub Releases. Turn on <span
+            class="path">Beta updates</span> if you also want GitHub pre-releases. You can confirm before joining beta.
+        </p>
+      </section>
+
+      <section id="bug">
+        <p class="num">10</p>
+        <h2>How do I report a bug?</h2>
+        <p>Best path, if you’re signed in: <span class="path">Settings → Report a bug</span>. That sends a title,
+          description, optional screenshots (up to two), and the last three session logs to GitHub. You can opt in to be
+          mentioned with your GitHub username so GitHub notifies you.</p>
+        <p>If you’re signed out, that screen asks you to sign in. You can also open an issue yourself at <a
+            href="https://github.com/Neighborhood-Nerd/cirrus/issues">github.com/Neighborhood-Nerd/cirrus/issues</a>.
+          Don’t paste API keys into a public issue. There is a daily cap on in-app reports.</p>
+      </section>
+
+      <section id="sign-out">
+        <p class="num">11</p>
+        <h2>How do I sign out?</h2>
+        <p><span class="path">Profile → Sign out</span>. The local library on that device is cleared. Your account in
+          the cloud stays. Sign in again on this device (or another) to pull it back.</p>
+      </section>
+
+      <section id="delete">
+        <p class="num">12</p>
+        <h2>How do I delete my account?</h2>
+        <p>There isn’t a delete-account button in the app yet. Ask from the <a href="../contact/">Contact</a> page.
+          We’ll delete the account and the copy stored with it. Audio files on the device you’re holding stay there
+          until you remove the app or those files.</p>
+      </section>
+
+      <section id="privacy">
+        <p class="num">13</p>
+        <h2>Is my listening private?</h2>
+        <p>Cirrus has no ads and no analytics SDKs. Captions stay on the device. An account stores shelves, history,
+          clips, and the keys you added so other devices can use them; that copy lives in Supabase, limited to your user
+          id. The <a href="../privacy/">Privacy Policy</a> is the full list.</p>
+      </section>
+
+      <section id="sell">
+        <p class="num">14</p>
+        <h2>Does Cirrus sell audiobooks?</h2>
+        <p>No. Cirrus is a player. It doesn’t sell, host, or supply audiobooks. Use it with audiobooks you own, have
+          licensed, or that are free to use. The <a href="../terms/">Terms of Use</a> say more.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Neighborhood Nerd</span>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../terms/">Terms of Use</a>
+      <a href="../contact/">Contact</a>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -17,6 +17,12 @@
   <a href="https://github.com/Neighborhood-Nerd/soundloom-providers">Providers</a>
   ·
   <a href="https://discord.gg/ehTSarrwf">Discord</a>
+  ·
+  <a href="https://neighborhood-nerd.github.io/cirrus/privacy/">Privacy</a>
+  ·
+  <a href="https://neighborhood-nerd.github.io/cirrus/terms/">Terms</a>
+  ·
+  <a href="https://neighborhood-nerd.github.io/cirrus/support/">Support</a>
 </p>
 
 ---
