@@ -20,7 +20,6 @@
   ·  
   <a href="https://testflight.apple.com/join/XYdu3GMy">TestFlight</a>
   ·
-  
   <a href="https://neighborhood-nerd.github.io/cirrus/privacy/">Privacy</a>
   ·
   <a href="https://neighborhood-nerd.github.io/cirrus/terms/">Terms</a>
