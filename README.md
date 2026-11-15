@@ -42,6 +42,7 @@ Your account syncs library state, shelves, and settings across devices. After th
 - **Full audiobook player** — chapter skip, ±30s seek, speed control, sleep timer, car mode, and casting
 - **CarPlay** — browse your library and control playback from the dashboard
 - **Clips & notes** — bookmark moments and jump back into them later
+- **Closed Captions** — follow along with synchronized text as the narrator speaks
 - **Listen log** — see play/pause sessions and time spent for each title
 - **Pluggable sources** — install provider repos and configure downloaders for cloud-unlocked audio
 - **Cross-device sync** — library, shelves, and AudiobookDB key travel with your Cirrus account
@@ -82,9 +83,13 @@ Phone and player screens are shown two per row so the README stays scannable on 
     </td>
   </tr>
   <tr>
-    <td align="center" colspan="2">
+    <td align="center">
       <a href="screenshots/listen-log.png"><img src="screenshots/listen-log.png" alt="Playback history listen log" width="260" /></a><br />
       <sub><strong>Listen log</strong></sub>
+    </td>
+    <td align="center">
+      <a href="screenshots/closed-captions.png"><img src="screenshots/closed-captions.png" alt="Closed Captions with synchronized follow-along text" width="260" /></a><br />
+      <sub><strong>Closed Captions</strong></sub>
     </td>
   </tr>
   <tr>
