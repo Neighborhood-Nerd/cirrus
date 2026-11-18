@@ -1,0 +1,87 @@
+name: Bug Report
+description: Something in Cirrus is broken or behaving wrong.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        If you are signed in on the app, **Settings → Report a bug** is usually better: it can attach recent session logs. Use this form when that is not an option, or when you want to add detail afterward.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A short description of the bug.
+      placeholder: Playback stops when I skip to the next chapter…
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What should we do to see the same thing?
+      placeholder: |
+        1. Open a book from Library
+        2. Start playback
+        3. Skip to the next chapter
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: The next chapter should play without stopping.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      multiple: true
+      options:
+        - iPhone
+        - iPad
+        - Android phone
+        - Android tablet
+        - Android Auto
+        - CarPlay
+        - macOS
+        - Windows
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Settings → About, or the version on the GitHub release you installed.
+      placeholder: 2.0.0
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: iOS 18.1, Android 15, Windows 11…
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recording
+      description: Drag and drop images or video here if they help.
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Book title, provider, downloader, or other context that might matter. Do not paste API keys or passwords.
+    validations:
+      required: false

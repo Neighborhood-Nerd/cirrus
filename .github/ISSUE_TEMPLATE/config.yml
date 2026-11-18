@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord
+    url: https://discord.gg/ehTSarrwf
+    about: Chat with other listeners and get quick help.
+  - name: Support
+    url: https://neighborhood-nerd.github.io/cirrus/support/
+    about: Account, downloads, and other product help.

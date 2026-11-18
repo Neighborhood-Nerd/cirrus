@@ -1,0 +1,60 @@
+name: Feature Suggestion
+description: An idea for something Cirrus could do better or newly support.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Clear use cases help a lot more than a one-line wish list.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What do you want?
+      description: One or two sentences on the feature.
+      placeholder: Let me pin a series so new books land on To Listen automatically…
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What are you trying to do today that is awkward, missing, or manual?
+      placeholder: I keep checking the catalogue for new books in a series I follow…
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: How should it work?
+      description: Optional. Sketch the flow if you have one in mind. Rough is fine.
+      placeholder: |
+        From a series page, a “Follow series” action adds future titles to To Listen…
+    validations:
+      required: false
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: Where would you use this?
+      multiple: true
+      options:
+        - Phone / tablet
+        - Car (Android Auto or CarPlay)
+        - Desktop (macOS / Windows)
+        - Everywhere
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds you use today
+      description: Optional. What do you do instead right now?
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Mockups, links, or examples from other apps are welcome.
+    validations:
+      required: false
